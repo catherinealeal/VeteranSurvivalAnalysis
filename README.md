@@ -20,7 +20,7 @@ Parametric survival analysis involves fitting data to a specific, pre-defined pr
 
 Based on the univariate Weibull models, the only covariates significantly associated with survival (p < 0.05) are cell type and Karnofsky performance score (karno). This suggests that these variables have a meaningful impact on survival time and should be considered in the multivariable parametric survival model.
 
-![image]()
+![image](https://github.com/catherinealeal/VeteranSurvivalAnalysis/blob/main/images/param_model.png)
 
 Positive coefficients indicate longer survival while negative coefficients indicate shorter survival.
 
@@ -38,7 +38,7 @@ Chi-squared of the likelihood ratio test = 63.15 (p < 0.05): The Weibull model w
 
 While parametric models assume a specific distribution for survival times, non-parametric models infer a survival distribution based on the data. The non-parametric model I'm going to use is the Kaplan-Meier estimator. By plotting Kaplan–Meier curves, I can visually compare survival patterns across groups (tumor cell types) and use log-rank tests to formally assess whether differences are statistically significant. This complements the parametric Weibull model by showing whether the distributional assumptions made there are reasonable.
 
-![image]()
+![image](https://github.com/catherinealeal/VeteranSurvivalAnalysis/blob/main/images/KM.png)
 
 This plot shows the overall survival probability for all veterans in the dataset. The stepwise curve represents the proportion of patients surviving beyond each time point. For example, the curve indicates that only about 10% of veterans are expected to survive one year after treatment.
 
@@ -46,7 +46,7 @@ The median survival time indicates the time at which the survival probability is
 
 Now, I want to look at group effects, specifically for cell type, since this was identified in the parametric analysis to be significantly associated with survival. 
 
-![image]()
+![image](https://github.com/catherinealeal/VeteranSurvivalAnalysis/blob/main/images/KM_CellType.png)
 
 It is clear from this plot that survival of veterans depends on tumor cell type. Veterans with squamous and large cell tumors tend to have higher survival probabilities, while those with adeno and small cell tumors experience much shorter survival times.
 
@@ -58,7 +58,7 @@ The log-rank test shows that survival differs significantly by tumor cell type (
 
 I can evaluate the exponential assumption by overlaying the fitted exponential survival curve on the Kaplan–Meier estimate. The Kaplan–Meier curve reflects observed survival, while the exponential model assumes a constant hazard. Close alignment between the two curves would support the exponential fit.
 
-![image]()
+![image](https://github.com/catherinealeal/VeteranSurvivalAnalysis/blob/main/images/AssumptionEval.png)
 
 The fitted exponential survival curve closely aligns with the Kaplan–Meier estimate, indicating that the assumption of a constant hazard in a exponential model is reasonable for this dataset.
 
