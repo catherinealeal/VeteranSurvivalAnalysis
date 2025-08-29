@@ -66,4 +66,4 @@ The fitted exponential survival curve closely aligns with the Kaplan–Meier est
 
 Overall, this analysis demonstrated that tumor cell type and Karnofsky performance score are the most significant predictors of survival among veterans with lung cancer. Patients with squamous and large cell tumors generally exhibit longer survival times, while those with adeno and small cell tumors experience shorter survival. This means that knowing the tumor type can help doctors give a more informed prognosis. Higher performance scores are also associated with improved survival. The Karnofsky performance score measures a patient’s overall functional ability. Veterans with higher scores, meaning they are more physically capable, are likely to survive longer. This highlights the importance of overall health and fitness in treatment planning.
 
-View the full analysis with R code [here]([https://github.com/catherinealeal/VeteranSurvivalAnalysis](https://github.com/catherinealeal/VeteranSurvivalAnalysis/blob/main/SurvivalAnalysis.Rmd)). 
+View the full analysis with R code [here](https://github.com/catherinealeal/VeteranSurvivalAnalysis/blob/main/SurvivalAnalysis.Rmd). 
